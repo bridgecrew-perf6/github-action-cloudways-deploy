@@ -16,9 +16,7 @@ ssh-keygen -m PEM -t rsa -b 4096
 
 Install the generated public key to cloudways dashboard in
 
-https://platform.cloudways.com/server/serverId/access_detail
-in SSH PUBLIC KEYS
-![image](https://user-images.githubusercontent.com/293717/173668540-2a981383-7b42-4fec-834f-131e7e29e645.png)
+https://platform.cloudways.com/server/serverId/access_detail in SSH PUBLIC KEYS
 
 
 
