@@ -1,0 +1,35 @@
+# Cloudways Deployment through Github Actions
+# 
+# Placed at: .github/workflow/deploy.yml
+
+name: Deploy to Cloudways
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SSH_PORT: 22 # Cloudways SSH port
+      SSH_HOST: 144.202.101.119 # Cloudways SSH host
+      SSH_USERNAME: master_paxtthvbxc  # Cloudways SSH Username
+      CLOUDWAYS_FOLDER: /home/master/applications/gppwdgfduv/public_html/wp-content/ # Cloudways Root folder (end with "/")
+  
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: ./.github/actions/test_deploy-action   # folder name will be "repositoryName-action"
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+        ARGS: >-
+          -rltgoDzvO
+          --exclude='.git'
+          --exclude='.github/'
+        REMOTE_HOST: ${{ env.SSH_HOST }}
+        REMOTE_USER: ${{ env.SSH_USERNAME }}
+        TARGET: ${{ env.CLOUDWAYS_FOLDER}}
+ 
