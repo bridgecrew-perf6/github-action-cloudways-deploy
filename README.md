@@ -18,10 +18,13 @@ Install the generated public key to cloudways dashboard in
 
 https://platform.cloudways.com/server/serverId/access_detail
 in SSH PUBLIC KEYS
+![image](https://user-images.githubusercontent.com/293717/173668540-2a981383-7b42-4fec-834f-131e7e29e645.png)
 
 
 
 Then add your private key to GITHUB
+![image](https://user-images.githubusercontent.com/293717/173668506-400f962f-baba-488e-877d-75377998a6dd.png)
+
 settings/secrets/actions and name it SSH_KEY
 
 2. SSH_HOST [required]
