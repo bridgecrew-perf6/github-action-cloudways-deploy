@@ -1,4 +1,4 @@
-# ssh deployments
+# Cloudways GitHub Deployment Action
 
 Deploy code with rsync over ssh, using NodeJS.
 
