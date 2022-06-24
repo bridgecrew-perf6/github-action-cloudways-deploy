@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SSH_PORT: 22 # Cloudways SSH port
-      SSH_HOST: 144.202.101.119 # Cloudways SSH host
-      SSH_USERNAME: master_paxtthvbxc  # Cloudways SSH Username
+      SSH_HOST: PORT # Cloudways SSH host
+      SSH_USERNAME: SSH-USERNAME  # Cloudways SSH Username
       CLOUDWAYS_FOLDER: /home/master/applications/gppwdgfduv/public_html/wp-content/ # Cloudways Root folder (end with "/")
   
     steps:
